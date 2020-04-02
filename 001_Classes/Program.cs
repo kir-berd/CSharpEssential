@@ -27,11 +27,34 @@ namespace _001_Classes
 
             #endregion
 
+            Console.WriteLine();
+
             #region Task 2
 
             Rectangle rect = new Rectangle(10.0, 10.0);
             Console.WriteLine($"Площадь прямоугольника со сторонами 10 и 10 = {rect.Area}");
             Console.WriteLine($"Периметр прямоугольника со сторонами 10 и 10 = {rect.Perimeter}");
+
+            #endregion
+
+            Console.WriteLine();
+
+            #region Task 3
+
+            Book book = new Book();
+            book.Author = "Vasily Pupkin";
+            book.Title = "Fish text";
+            book.Body = "Lorem ipsum dolor sit amet";
+            book.Show();
+
+            Book book2 = new Book();
+            book2.Author = "Ivanov Ivan Ivanovich";
+            book2.Title = "My book";
+            book2.Body = "Cool content";
+            book2.Show();
+
+            Book book3 = new Book();
+            book3.Show();
 
             #endregion
         }
